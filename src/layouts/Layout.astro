@@ -82,7 +82,17 @@
 		--text: #262222;
 		--background-color: #f9f8f7;
 		--highlight: #dd6305;
+		img{
+		mix-blend-mode: darken;
+		}
 		--max-width: 120rem;
+		@media (prefers-color-scheme: dark) {
+		--text: #f9f8f7;
+		--background-color: #262222;
+		img{
+		mix-blend-mode: lighten;
+		}
+		}
 		/* --background-color: hsl(130 10 80); */
 		--background-color-2: color-mix(
 			in hsl,
@@ -148,7 +158,6 @@
 	}
 	img {
 		width: 100%;
-		mix-blend-mode: darken;
 	}
 	a {
 		background: var(--text);
@@ -163,6 +172,7 @@
 	h2 {
 		margin: 0;
 		padding: 0;
+		color: var(--highlight);
 	}
 	.header-wrapper {
 		position: relative;
@@ -172,7 +182,7 @@
 		position: absolute;
 		top: 1rem;
 		left: 1rem;
-		color: var(--background-color);
+		/* color: var(--background-color); */
 		font-size: clamp(40px, 10vw, 80px);
 		line-height: 0.9;
 	}

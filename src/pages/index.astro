@@ -1,23 +1,68 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
-
 <Layout>
-<section>
-    <p>Sunday, September 7<sup>th</sup></p>
-    <p>Durand Park</p>
-    <p>Noon&mdash;Just show up</p>
-</section>
+	<section>
+		<div class='blackout'>
+			<div class='orange'>
+				<p class='p1'>Sunday</p>
+				<p class='p2'>September 7</p>
+			</div>
+			<div class='white'>
+				<p class='p3'>Durand Park</p>
+				<p class='p4'>12&ndash;Noon</p>
+			</div>
+			<div class='orange'>
+				<p class='p5'>Just show up</p>
+			</div>
+		</div>
+		<p>We're back in the streets of Hamilton for the 5<sup>th</sup> edition of the Steel City Alleycat.</p>
+		<p>ALL riders and skill levels welcome. Rdie with a team or solo.</p>
+	</section>
 </Layout>
 <style>
-    p:nth-child(1){
-        color: var(--highlight);
-    }
-    p{
-        font-family: "blackout_midnight";
-    }
+	.blackout{
+		background-image: url('/images/results.jpg');
+		background-size: cover;
+		/* margin-block: 5rem; */
+	}
+	.blackout div{
+		padding: 1rem;
+		mix-blend-mode: hard-light;
+	}
+	.blackout .orange{
+		background-color: var(--highlight);
+	}
+	.blackout .white{
+		background-color: var(--text);
+	}
+	.p1{
+		/* font-size: 6.9rem; */
+		font-size:clamp( 6rem, 15vw, 16rem);
+	}
+	.p2{
+		/* font-size: 4.2rem; */
+		font-size:clamp( 4rem, 12vw, 16rem);
+	}
+	.p3{
+		/* font-size: 3.9rem; */
+		font-size:clamp( 3.9rem,10vw, 14rem);
+	}
+	.p4{
+		/* font-size: 6.4rem; */
+		font-size: clamp(6.4rem, 15vw, 17rem);
+	}
+	.p5{
+		/* font-size: 3.8rem; */
+		font-size: clamp(3.8rem, 10vw, 12rem);
+	}
+	.blackout p{
+		text-align: center;
+		font-family: "blackout_midnight";
+		color: var(--background-color);
+		line-height: 1;
+		margin: 0;
+	}
 </style>
-
+	
+	
