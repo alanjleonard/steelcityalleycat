@@ -80,8 +80,9 @@
 	@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap");
 	:root {
 		--text: #262222;
+		--background-color: #f9f8f7;
+		--highlight: #dd6305;
 		--max-width: 120rem;
-		--background-color: hsl(136 23 56);
 		/* --background-color: hsl(130 10 80); */
 		--background-color-2: color-mix(
 			in hsl,
@@ -91,8 +92,8 @@
 		--background: linear-gradient(
 			150deg,
 			var(--background-color),
-			var(--background-color-2),
-			var(--background-color)
+			var(--background-color-2)
+			/* var(--background-color) */
 		);
 		font-size: 62.5%;
 		box-sizing: border-box;
@@ -100,7 +101,12 @@
 	*,
 	*::before,
 	*::after {
+
 		box-sizing: inherit;
+	}
+	*::selection{
+		background: var(--highlight);
+		color: var(--text);
 	}
 	@font-face {
 		font-family: "blackout_midnight";
