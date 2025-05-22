@@ -1,25 +1,27 @@
 ---
 import Layout from "../layouts/Layout.astro";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import HeaderImg from "../components/HeaderImg.astro";
+import BodyText from "../components/BodyText.astro";
+import SideWordMark from "../components/SideWordMark.astro";
+import Nav from "../components/Nav.astro";
+import SocialLinks from "../components/SocialLinks.astro";
 ---
 
 <Layout>
+    <SideWordMark />
+    <Nav />
     <div class="sections">
         <section>
-            <div class="header-wrapper" id="what">
-                <img
-                    class="img"
-                    src="/images/results.jpg"
-                />
-                <h2>Results</h2>
-            </div>
-            <p class="body-text">
+            <HeaderImg
+                header="Results"
+                id="results"
+                imgUrl="/images/results.jpg"
+            />
+            <BodyText>
                 Technical issues may have resulted in your finish time not being
                 recorded for the first 3 races. <br /> Finish time is time-of-day.
                 Races start at noon.
-            </p>
+            </BodyText>
             <ul>
                 <li><a href="#SCA1">Steel City Alleycat </a></li>
                 <li><a href="#SCA2">Steel City Alleycat II </a></li>
@@ -31,6 +33,7 @@ import Layout from "../layouts/Layout.astro";
             </div>
         </section>
     </div>
+    <SocialLinks />
 </Layout>
 <script>
     function getOrdinalSuffix(place) {

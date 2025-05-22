@@ -1,62 +1,140 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
+import SideWordMark from "../components/SideWordMark.astro";
+import SocialLinks from "../components/SocialLinks.astro";
+import HeaderImg from "../components/HeaderImg.astro";
 ---
+
 <Layout>
+	<section class="logo-wrapper">
+		<img
+			class="logo"
+			src="/images/logos/alleycat-5-orange.png"
+			alt="steel city alleycat 5 log"
+		/>
+	</section>
+	<SideWordMark />
+	<Nav />
+	<div class="header-wrapper">
+		<section>
+			<div class="blackout">
+				<div class="orange">
+					<p class="p1">Sunday</p>
+					<p class="p2">September 7</p>
+				</div>
+				<div class="white">
+					<p class="p4">Noon</p>
+					<p class="p3">Durand Park</p>
+				</div>
+				<!-- <div class="orange">
+					<p class="p5">Just show up</p>
+				</div> -->
+			</div>
+		</section>
+	</div>
 	<section>
-		<div class='blackout'>
-			<div class='orange'>
-				<p class='p1'>Sunday</p>
-				<p class='p2'>September 7</p>
-			</div>
-			<div class='white'>
-				<p class='p3'>Durand Park</p>
-				<p class='p4'>12&ndash;Noon</p>
-			</div>
-			<div class='orange'>
-				<p class='p5'>Just show up</p>
-			</div>
-		</div>
-		<p>We're back in the streets of Hamilton for the 5<sup>th</sup> edition of the Steel City Alleycat.</p>
-		<p>ALL riders and skill levels welcome. Rdie with a team or solo.</p>
+		<p class='bodyText'>
+			We're back in the streets of Hamilton for the 5th edition of the
+			Steel City Alleycat.
+		</p>
+
+		<p class='bodyText'>
+			Same as the last race—4 checkpoints and an unknown finish line when
+			you start the race. No set route, very few rules.
+		</p>
+
+		<HeaderImg
+			header="Just Show Up"
+			id="what"
+			imgUrl="/images/all-are-welcome.jpg"
+		/>
+		<p class='bodyText'>
+			You don't have to sign up, just show up to Durand Park for NOON on
+			Sunday September 7th ready to ride
+		</p>
+		<p class='bodyText'>
+			Race bounds are West of Ottawa St, East of Durand and down the
+			Mountain to the lake. [ map ]
+		</p>
+		<p class='bodyText'>
+			Spoke cards for 1st, 2nd, and 3rd place. Dead Fucking Last gets
+			something special as well.
+		</p>
+		<ol class='bodyText'>
+			<li>
+				Just show up at Durand Park for NOON on Sunday September 7th.
+			</li>
+			<li>Get a manifest from me.</li>
+			<li>
+				When I say Go! open the manifest and there will be 4 checkpoint
+				locations listed.
+			</li>
+			<li>Ride to those checkpoints and find the clues</li>
+			<li>
+				Fill out the manifest to figure out where the finish line is.
+			</li>
+			<li>
+				There's some fuckery on the manifest to keep things interesting.
+			</li>
+			<li>First to the finish line wins.</li>
+			<li>Spoke cards for first, second, and third.</li>
+			<li>Tshirts for the raddest riders.</li>
+			<li>Extra special spoke card for dead fucking last</li>
+			<li>All riders, bikes, & skill levels welcome.</li>
+			<li>Ride with a team or on your own</li>
+		</ol>
 	</section>
 </Layout>
+<SocialLinks />
+
 <style>
-	.blackout{
-		background-image: url('/images/results.jpg');
-		background-size: cover;
-		/* margin-block: 5rem; */
+	.logo-wrapper {
+		height: 75svh;
+		min-width: 301px;
+		text-align: center;
+		display: grid;
+		place-items: center;
 	}
-	.blackout div{
+	.logo-wrapper img {
+		width: 100%;
+		max-width: 900px;
+	}
+	.blackout {
+		background-image: url("/images/results.jpg");
+		background-size: cover;
+	}
+	.blackout div {
 		padding: 1rem;
 		mix-blend-mode: hard-light;
 	}
-	.blackout .orange{
+	.blackout .orange {
 		background-color: var(--highlight);
 	}
-	.blackout .white{
+	.blackout .white {
 		background-color: var(--text);
 	}
-	.p1{
+	.p1 {
 		/* font-size: 6.9rem; */
-		font-size:clamp( 6rem, 15vw, 16rem);
+		font-size: clamp(6rem, 15vw, 16rem);
 	}
-	.p2{
+	.p2 {
 		/* font-size: 4.2rem; */
-		font-size:clamp( 4rem, 12vw, 16rem);
+		font-size: clamp(4rem, 12vw, 16rem);
 	}
-	.p3{
+	.p3 {
 		/* font-size: 3.9rem; */
-		font-size:clamp( 3.9rem,10vw, 14rem);
+		font-size: clamp(3.9rem, 10vw, 14rem);
 	}
-	.p4{
+	.p4 {
 		/* font-size: 6.4rem; */
 		font-size: clamp(6.4rem, 15vw, 17rem);
 	}
-	.p5{
+	.p5 {
 		/* font-size: 3.8rem; */
 		font-size: clamp(3.8rem, 10vw, 12rem);
 	}
-	.blackout p{
+	.blackout p {
 		text-align: center;
 		font-family: "blackout_midnight";
 		color: var(--background-color);
@@ -64,5 +142,3 @@ import Layout from '../layouts/Layout.astro';
 		margin: 0;
 	}
 </style>
-	
-	

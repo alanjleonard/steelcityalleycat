@@ -1,0 +1,20 @@
+---
+const { text } = Astro.props;
+---
+
+<p>
+    <slot />
+</p>
+<style>
+    p {
+        /* margin-block: 1lh; */
+        max-width: calc(var(--max-width) / 2);
+        margin: 1lh auto;
+        padding: 0 1rem;
+        line-height: 1.5;
+        hyphenate-limit-chars: 7;
+        hyphens: auto;
+        text-align: justify;
+        text-wrap: pretty;
+    }
+</style>
