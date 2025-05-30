@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /*
+Sitemap: https://steelcityalleycat.com/sitemap.xml

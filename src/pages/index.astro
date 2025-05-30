@@ -11,7 +11,7 @@ import HeaderImg from "../components/HeaderImg.astro";
 		<img
 			class="logo"
 			src="/images/logos/alleycat-5-orange.png"
-			alt="steel city alleycat 5 log"
+			alt="steel city alleycat 5 logo"
 		/>
 	</section>
 	<SideWordMark />
@@ -27,78 +27,251 @@ import HeaderImg from "../components/HeaderImg.astro";
 					<p class="p4">Noon</p>
 					<p class="p3">Durand Park</p>
 				</div>
-				<!-- <div class="orange">
-					<p class="p5">Just show up</p>
-				</div> -->
+				<div class="orange inline">
+					<p class="p5">Free entry</p>
+					<p class="p6">Not Sponsored</p>
+					<p class="p7">All are welcome</p>
+				</div>
 			</div>
 		</section>
 	</div>
 	<section>
-		<p class='bodyText'>
+		<p class="bodyText">
 			We're back in the streets of Hamilton for the 5th edition of the
 			Steel City Alleycat.
 		</p>
 
-		<p class='bodyText'>
-			Same as the last race—4 checkpoints and an unknown finish line when
-			you start the race. No set route, very few rules.
+		<p class="bodyText">
+			Same as the last race:
+			<ul class="bodyText">
+				<li>Start Line at Durand Park</li>
+				<li>Paper manifest</li>
+				<li>4 new checkpoints</li>
+				<li>Unknown finish line when you start the race</li>
+				<li>No set route</li>
+			</ul>
 		</p>
 
 		<HeaderImg
 			header="Just Show Up"
+			id="just-show-up"
+			imgUrl="/images/all-are-welcome.jpg"
+		/>
+		<p class="bodyText">You don't have to sign up.</p>
+		<p class="bodyText">
+			Just show up to Durand Park for NOON on Sunday September 7th ready
+			to ride
+		</p>
+		<HeaderImg
+			header="Then what?"
 			id="what"
 			imgUrl="/images/all-are-welcome.jpg"
 		/>
-		<p class='bodyText'>
-			You don't have to sign up, just show up to Durand Park for NOON on
-			Sunday September 7th ready to ride
-		</p>
-		<p class='bodyText'>
+		<ol class="bodyText">
+			<li>Put your bike on one side of the park.</li>
+			<li>A paper manifest gets attached to your bike.</li>
+			<li>Line up on the other side of the park.</li>
+			<li>
+				When I say go, run to your bike, open the manifest, and ride
+				like hell.
+			</li>
+		</ol>
+		<HeaderImg
+			header="manifest?"
+			id="manifest"
+			imgUrl="/images/all-are-welcome.jpg"
+		/>
+		<ul class="bodyText">
+			<li>
+				The manifest will have list of 4 checkpoints. For example:
+				BANDSHELL
+			</li>
+			<li>Go to that checkpoint location</li>
+			<li>Find the race marker with the code</li>
+			<li>Write the code in the manifest</li>
+			<li>There will be a puzzle to find where the finish line is</li>
+			<li>
+				There may be some other fuckery on the manifest to keep it
+				interesting
+			</li>
+			<li>
+				First one to arrive at the finish with a <em>completed</em> manifest
+				wins.
+			</li>
+			<li>
+				When you get to the finish line, find me and I'll record your rider name,
+				number, and finish time.
+			</li>
+			<li>Stick around for spoke cards, t-shirts, and vibes</li>
+		</ul>
+		<HeaderImg
+			header="The course"
+			id="the-course"
+			imgUrl="/images/all-are-welcome.jpg"
+		/>
+		<p class="bodyText">
 			Race bounds are West of Ottawa St, East of Durand and down the
 			Mountain to the lake. [ map ]
 		</p>
-		<p class='bodyText'>
+		<HeaderImg
+			header="Prizes"
+			id="Prizes"
+			imgUrl="/images/all-are-welcome.jpg"
+		/>
+		<p class="bodyText">
 			Spoke cards for 1st, 2nd, and 3rd place. Dead Fucking Last gets
 			something special as well.
 		</p>
-		<ol class='bodyText'>
+		<p class="bodyText">
+			T-shirts and sticker for the raddest riders. In the past, people
+			have gotten t-shirts for:
+		</p>
+		<ul class="bodyText">
+			<li>Shittiest bike</li>
+			<li>Biggest breakfast</li>
+			<li>Doing the race on thier wedding aniversary</li>
+			<li>Most hungover</li>
+			<li>Best socks</li>
+			<li>Biggest group</li>
+			<li>Sickest handlebars</li>
+			<li>Furthest travelled</li>
+			<li>Best rider/team name</li>
+			<li>And whatever else I feel like that day</li>
+		</ul>
+		<HeaderImg
+			header="The rules"
+			id="the-rules"
+			imgUrl="/images/all-are-welcome.jpg"
+		/>
+		<ol class="bodyText">
+			<li>Ride safe</li>
+			<li>Have fun</li>
 			<li>
-				Just show up at Durand Park for NOON on Sunday September 7th.
+				Friendly competition only. The prize is a fucking piece of
+				paper, so relax.
 			</li>
-			<li>Get a manifest from me.</li>
+			<li>Ride anything you want</li>
 			<li>
-				When I say Go! open the manifest and there will be 4 checkpoint
-				locations listed.
+				No Sharing Clues. You can ride as a team, but you can't split
+				up. I'll know.
 			</li>
-			<li>Ride to those checkpoints and find the clues</li>
-			<li>
-				Fill out the manifest to figure out where the finish line is.
-			</li>
-			<li>
-				There's some fuckery on the manifest to keep things interesting.
-			</li>
-			<li>First to the finish line wins.</li>
-			<li>Spoke cards for first, second, and third.</li>
-			<li>Tshirts for the raddest riders.</li>
-			<li>Extra special spoke card for dead fucking last</li>
-			<li>All riders, bikes, & skill levels welcome.</li>
-			<li>Ride with a team or on your own</li>
+			<li>Ride safe.</li>
 		</ol>
+		<HeaderImg header="FAQ" id="FAQ" imgUrl="/images/all-are-welcome.jpg" />
+		<ul class="faq bodyText">
+			<li>
+				<details>
+					<summary
+						>What if I showed up late to the start line?</summary
+					>
+					<p>Too bad, I'm not sticking around.</p>
+				</details>
+			</li>
+			<li>
+				<details>
+					<summary>Do I have to do the clues in order?</summary>
+					<p>No.</p>
+				</details>
+			</li>
+			<li>
+				<details>
+					<summary>What do I need to bring?</summary>
+					<div>
+						<ul>
+							<li>
+								A pen or pencil (I may have some golf pencils,
+								but don't count on it)
+							</li>
+							<li>Something fast to ride</li>
+							<li>Good mood</li>
+							<li>Bad attitude</li>
+						</ul>
+					</div>
+				</details>
+			</li>
+			<li>
+				<details>
+					<summary>
+						I can't make the race, but I still want a t shirt, can I
+						buy one from you?
+					</summary>
+					<p>No.</p>
+				</details>
+			</li>
+			<li>
+				<details>
+					<summary>What if I can't find the marker?</summary>
+					<p>Look harder.</p>
+					<p>
+						If you think it’s actually missing or covered, DM me on
+						<a
+							href="https://www.instagram.com/steelcityalleycat/"
+							target="_blank">instagram</a
+						>
+						or email me at
+						<a href="mailto:info@steelcityalleycat.com"
+							>info@steelcityalleycat.com</a
+						>.
+					</p>
+				</details>
+			</li>
+			<li>
+				<details>
+					<summary>
+						I don't live in Hamilton, am I going to be able to
+						figure this out?
+					</summary>
+					<p>
+						Yea for sure, the clues aren't that hard, you can just
+						google them. Or make a friend at the start line.
+					</p>
+				</details>
+			</li>
+			<li>
+				<details>
+					<summary>
+						Can I give you money? (somebody has asked me this
+						before).
+					</summary>
+					<p>No. Give it to your local food bank.</p>
+				</details>
+			</li>
+			<li>
+				<details>
+					<summary>Who’s behind all this?</summary>
+					<p>
+						My name is AL. You can contact me at
+						<a href="mailto:al@steelcityalleycat.com"
+							>AL@steelcityalleycat.com</a
+						>
+						or on
+						<a
+							href="https://www.instagram.com/steelcityalleycat/"
+							target="_blank"
+						>
+							instagram</a
+						>.
+					</p>
+				</details>
+			</li>
+		</ul>
 	</section>
 </Layout>
 <SocialLinks />
 
 <style>
 	.logo-wrapper {
-		height: 75svh;
-		min-width: 301px;
-		text-align: center;
+		height: 50svh;
+		/* height: 100%; */
+		/* min-width: 301px; */
 		display: grid;
 		place-items: center;
+		padding: 2rem;
 	}
 	.logo-wrapper img {
-		width: 100%;
-		max-width: 900px;
+		/* height: 100%; */
+		max-width: 700px;
+		/* max-width: 850px; */
 	}
 	.blackout {
 		background-image: url("/images/results.jpg");
@@ -110,6 +283,11 @@ import HeaderImg from "../components/HeaderImg.astro";
 	}
 	.blackout .orange {
 		background-color: var(--highlight);
+	}
+	.blackout .orange.inline {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
 	}
 	.blackout .white {
 		background-color: var(--text);
@@ -132,7 +310,15 @@ import HeaderImg from "../components/HeaderImg.astro";
 	}
 	.p5 {
 		/* font-size: 3.8rem; */
-		font-size: clamp(3.8rem, 10vw, 12rem);
+		font-size: clamp(3.8rem, 2vw, 12rem);
+	}
+	.p6 {
+		/* font-size: 3.8rem; */
+		font-size: clamp(3.8rem, 2vw, 12rem);
+	}
+	.p7 {
+		/* font-size: 3.8rem; */
+		font-size: clamp(3.8rem, 2vw, 12rem);
 	}
 	.blackout p {
 		text-align: center;
@@ -140,5 +326,12 @@ import HeaderImg from "../components/HeaderImg.astro";
 		color: var(--background-color);
 		line-height: 1;
 		margin: 0;
+	}
+	ul.faq > li{
+		list-style: none;
+	}
+	ul.faq summary{
+		cursor: pointer;
+		font-weight: 900;
 	}
 </style>
