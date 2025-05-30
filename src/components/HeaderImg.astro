@@ -1,9 +1,10 @@
 ---
 const { header, imgUrl, id } = Astro.props;
 ---
-<div class="header-wrapper" style={`background-image: url(${imgUrl});`} id={id}>
+<!-- <div class="header-wrapper" style={`background-image: url(${imgUrl});`} id={id}> -->
+<div class="header-wrapper" id={id}>
     <div class='orange'>
-        <h2>{header}</h2>
+        <h2 class='bodyText'>{header}</h2>
     </div>
 </div>
 <style>
@@ -23,13 +24,14 @@ const { header, imgUrl, id } = Astro.props;
 		background-color: hsl(0, 6%, 44%);
     }
     .header-wrapper .orange h2{
-		text-align: center;
+		text-align: left;
 		font-family: "blackout_midnight";
 		color: var(--text);
 		line-height: 1;
-		margin: 0;
-        padding: 6rem 0;
-		font-size:clamp( 2rem, 200%, 4rem);
+		margin-block: 0;
+        padding: 0;
+		font-size:clamp( 6.5rem, 8vw, 10rem);
+		word-spacing: 100vw;
     }
 
 </style>
