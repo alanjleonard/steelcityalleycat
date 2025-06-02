@@ -62,6 +62,12 @@ import HeaderImg from "../components/HeaderImg.astro";
 			Just show up to Durand Park for NOON on Sunday September 7th ready
 			to ride
 		</p>
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d998.1980836424308!2d-79.87631785902445!3d43.25016315686084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c9b75e9a28ce3%3A0x30b923337a46f93c!2sDurand%20Park!5e0!3m2!1sen!2sca!4v1715886885647!5m2!1sen!2sca"
+			style="border: 0"
+			allowfullscreen=""
+			loading="lazy"
+			referrerpolicy="no-referrer-when-downgrade"></iframe>
 		<HeaderImg
 			header="Then what?"
 			id="what"
@@ -81,13 +87,34 @@ import HeaderImg from "../components/HeaderImg.astro";
 			id="manifest"
 			imgUrl="/images/all-are-welcome.jpg"
 		/>
+		<div class="manifest-wrapper">
+			<div class="front">
+				<h3>FRONT</h3>
+				<img
+					src="/images/manifest-front.jpg"
+					alt="the front of the manifest"
+				/>
+			</div>
+			<div class="back">
+				<h3>BACK</h3>
+				<img
+					src="/images/manifest-back.jpg"
+					alt="the back of the manifest"
+				/>
+			</div>
+			<strong>Find out what's inside on race day</strong>
+		</div>
 		<ul class="bodyText">
 			<li>
 				The manifest will have list of 4 checkpoints. For example:
 				BANDSHELL
 			</li>
 			<li>Go to that checkpoint location</li>
-			<li>Find the race marker with the code</li>
+			<li>
+				Find the race marker with the code
+				<img src="/images/test-code.png" />
+			</li>
+
 			<li>Write the code in the manifest</li>
 			<li>There will be a puzzle to find where the finish line is</li>
 			<li>
@@ -99,8 +126,8 @@ import HeaderImg from "../components/HeaderImg.astro";
 				wins.
 			</li>
 			<li>
-				When you get to the finish line, find me and I'll record your rider name,
-				number, and finish time.
+				When you get to the finish line, find me and I'll record your
+				rider name, number, and finish time.
 			</li>
 			<li>Stick around for spoke cards, t-shirts, and vibes</li>
 		</ul>
@@ -111,8 +138,11 @@ import HeaderImg from "../components/HeaderImg.astro";
 		/>
 		<p class="bodyText">
 			Race bounds are West of Ottawa St, East of Durand and down the
-			Mountain to the lake. [ map ]
+			Mountain to the lake.
 		</p>
+		<a href="https://www.google.com/maps/d/u/1/edit?mid=1XVJPi64dVQhSAbHXEsv-MpepZ1wqfi8&amp;usp=sharing" target="_blank">
+                <img src="/images/race-bounds-orange.png" alt="a map showing the race bounds">
+              </a>
 		<HeaderImg
 			header="Prizes"
 			id="Prizes"
@@ -152,8 +182,8 @@ import HeaderImg from "../components/HeaderImg.astro";
 			</li>
 			<li>Ride anything you want</li>
 			<li>
-				No sharing clues/checkpoints. You can ride as a team, but you can't split
-				up. I'll know.
+				No sharing clues/checkpoints. You can ride as a team, but you
+				can't split up. I'll know.
 			</li>
 			<li>Ride safe.</li>
 		</ol>
@@ -222,8 +252,9 @@ import HeaderImg from "../components/HeaderImg.astro";
 						figure this out?
 					</summary>
 					<p>
-						Yea for sure, the checkpoints aren't that hard to figure out, you can just
-						Google them. Or make a friend at the start line.
+						Yea for sure, the checkpoints aren't that hard to figure
+						out, you can just Google them. Or make a friend at the
+						start line.
 					</p>
 				</details>
 			</li>
@@ -327,10 +358,47 @@ import HeaderImg from "../components/HeaderImg.astro";
 		line-height: 1;
 		margin: 0;
 	}
-	ul.faq > li{
+	iframe{
+		width: 100%;
+		min-height: 40rem;
+	}
+	.manifest-wrapper {
+		display: flex;
+		position: relative;
+		background-color: var(--highlight);
+	}
+	.manifest-wrapper h3,
+	.manifest-wrapper strong {
+		color: var(--highlight);
+		font-family: "blackout_midnight";
+		z-index: 9;
+	}
+	.manifest-wrapper strong {
+		position: absolute;
+		font-size: 3.5rem;
+		bottom: 1rem;
+		width: 100%;
+		text-align: center;
+	}
+	.manifest-wrapper .front,
+	.manifest-wrapper .back {
+		position: relative;
+	}
+	.manifest-wrapper h3 {
+		text-align: center;
+		position: absolute;
+		width: 100%;
+		top: 1rem;
+		font-size: 6rem;
+	}
+	.manifest-wrapper img {
+		height: 100%;
+		/* mix-blend-mode: darken; */
+	}
+	ul.faq > li {
 		list-style: none;
 	}
-	ul.faq summary{
+	ul.faq summary {
 		cursor: pointer;
 		font-weight: 900;
 	}
