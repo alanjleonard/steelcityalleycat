@@ -17,14 +17,14 @@ import SocialLinks from "../components/SocialLinks.astro";
                 id="results"
                 imgUrl="/images/results.jpg"
             />
-            <BodyText>
+            <p class="bodyText">
                 Technical issues may have resulted in your finish time not being
                 recorded for the first 3 races. <br /> Finish time is time-of-day.
                 Races start at noon.
-            </BodyText>
+            </p>
             <ul>
-                <li><a href="#SCA1">Steel City Alleycat </a></li>
-                <li><a href="#SCA2">Steel City Alleycat II </a></li>
+                <li><a href="#SCA1">Steel City Alleycat</a></li>
+                <li><a href="#SCA2">Steel City Alleycat II</a></li>
                 <li><a href="#SCA3">Steel City Alleycat 3</a></li>
                 <li><a href="#SCA4">Steel City Alleycat 4</a></li>
             </ul>
@@ -101,11 +101,11 @@ import SocialLinks from "../components/SocialLinks.astro";
           </tr>`;
                 }
                 table += `
-      <tr>
-        <td>${getOrdinalSuffix(racer.place++)}</td>
-        <td><span>${racer.number}</span> ${racer.name}</td>
-        <td class='time'>${racer.time === 0 ? "DNF" : racer.time}</td>
-      </tr>`;
+                    <tr>
+                        <td>${getOrdinalSuffix(racer.place++)}</td>
+                        <td><span>${racer.number}</span> ${racer.name}</td>
+                        <td class='time'>${racer.time === 0 ? "DNF" : racer.time}</td>
+                    </tr>`;
             });
 
             // Close the table tag
@@ -115,3 +115,83 @@ import SocialLinks from "../components/SocialLinks.astro";
             document.getElementById(`table-wrapper`).innerHTML = table;
         });
 </script>
+<style is:global>
+    .results-wrapper {
+        max-width: var(--max-width);
+    }
+    .results-wrapper div {
+        /* display: flex; */
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .scroll-to-results {
+        display: flex;
+        justify-content: space-around;
+        font-size: 3.3rem;
+        font-family: "blackout_2am";
+    }
+    .scroll-to-results a {
+        text-decoration: none;
+        color: var(--highlight);
+    }
+    .results-header {
+        position: sticky;
+        top: 0;
+        margin: 0.5rem 0;
+        padding: 1rem;
+        border-bottom: solid 1px var(--text);
+        background: var(--background-color);
+    }
+    .results-header h3 {
+        font-size: 2.5rem;
+        margin: 0.25rem;
+        line-height: 1.2;
+        white-space: nowrap;
+    }
+    .results-header .date {
+        margin: 0;
+    }
+    .results-header .finish-location {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    tr:nth-child(even) {
+        background: var(--background-color);
+    }
+    th,
+    td {
+        text-align: left;
+        border-width: 0 0 1px 0;
+        border-style: solid;
+        border-color: #808080;
+        padding: 0.5rem;
+        vertical-align: top;
+    }
+    th:nth-child(1) ,
+    td:nth-child(1) {
+        text-align: right;
+        white-space: nowrap;
+        font-weight: 700;
+    }
+    th:nth-child(2) span ,
+    td:nth-child(2) span {
+        float: right;
+        display: inline-block;
+        text-align: right;
+        margin: 0 0.5rem 0 0;
+        font-weight: 700;
+        color: #fff8;
+    }
+    th:nth-child(3) ,
+    td:nth-child(3) {
+        text-align: right;
+    }
+    td.time {
+        font-family: monospace;
+    }
+</style>
