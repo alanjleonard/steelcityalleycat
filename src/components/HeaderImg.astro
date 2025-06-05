@@ -1,36 +1,38 @@
 ---
 const { header, imgUrl, id } = Astro.props;
 ---
+
 <div class="header-wrapper" id={id}>
-    <div class='orange'>
-        <h2 class='bodyText'>{header}</h2>
-    </div>
+	<div class="orange">
+		<h2 class="bodyText">{header}</h2>
+	</div>
 </div>
 <style>
-    .header-wrapper {
-        /* background set in HTML */
-        position: relative;
+	.header-wrapper {
+		/* background set in HTML */
+		position: relative;
 		background-size: cover;
-        background-position: center center;
-    }
-	.header-wrapper div{
-		padding: 1rem;
-		mix-blend-mode: hard-light;
+		background-position: center center;
 	}
-    .header-wrapper .orange{
+	.header-wrapper div {
+		padding: 1rem;
+		/* mix-blend-mode: hard-light; */
+	}
+	.header-wrapper .orange {
 		/* background-color: var(--highlight); */
 		/* background-color: hsl(0, 0, 15%); */
-		background-color: hsl(0, 6%, 44%);
-    }
-    .header-wrapper .orange h2{
+		/* background-color: hsl(0, 6%, 44%); */
+		background-color: hsl(0 6 35 / 0.12);
+		/* background-color: #1E1818; */
+	}
+	.header-wrapper .orange h2 {
 		text-align: left;
 		font-family: "blackout_midnight";
 		color: var(--text);
 		line-height: 1;
 		margin-block: 0;
-        padding: 0;
-		font-size:clamp( 6.5rem, 8vw, 10rem);
+		padding: 0;
+		font-size: clamp(6.5rem, 8vw, 10rem);
 		word-spacing: 100vw;
-    }
-
+	}
 </style>

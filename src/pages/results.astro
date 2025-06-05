@@ -21,7 +21,7 @@ import SocialLinks from "../components/SocialLinks.astro";
                 recorded for the first 3 races. <br /> Finish time is time-of-day.
                 Races start at noon.
             </p>
-            <ul class='bodyText'>
+            <ul class='bodyText links'>
                 <li><a href="#SCA1">Steel City Alleycat</a></li>
                 <li><a href="#SCA2">Steel City Alleycat II</a></li>
                 <li><a href="#SCA3">Steel City Alleycat 3</a></li>
@@ -124,6 +124,11 @@ import SocialLinks from "../components/SocialLinks.astro";
         justify-content: space-between;
         align-items: center;
     }
+    ul.links a{
+        /* color: blue; */
+        text-transform: uppercase;
+        font-family: "blackout_midnight";
+    }
     .scroll-to-results {
         display: flex;
         justify-content: space-around;
@@ -144,6 +149,8 @@ import SocialLinks from "../components/SocialLinks.astro";
     }
     .results-header h3 {
         font-size: 2.5rem;
+        text-transform: uppercase;
+        font-family: "blackout_midnight";
         margin: 0.25rem;
         line-height: 1.2;
         white-space: nowrap;
