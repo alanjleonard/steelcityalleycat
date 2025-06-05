@@ -96,7 +96,7 @@ import SocialLinks from "../components/SocialLinks.astro";
           <tr>
             <th>Place</th>
             <th>Racer Name <span>#</span> </th>
-            <th>Time</th>
+            <th class='tod'>Time of day</th>
           </tr>`;
                 }
                 table += `
@@ -199,5 +199,8 @@ import SocialLinks from "../components/SocialLinks.astro";
     }
     td.time {
         font-family: monospace;
+    }
+    th.tod{
+        white-space: nowrap;
     }
 </style>

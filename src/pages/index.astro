@@ -41,8 +41,9 @@ import HeaderImg from "../components/HeaderImg.astro";
 			STEEL CITY ALLEYCAT.
 		</p>
 
-		<p class="bodyText">
+		<p class="bodyText pre-list">
 			Same as the last race:
+		</p>
 			<ul class="bodyText">
 				<li>Start Line at Durand Park</li>
 				<li>Paper manifest</li>
@@ -50,7 +51,6 @@ import HeaderImg from "../components/HeaderImg.astro";
 				<li>Unknown finish line when you start the race</li>
 				<li>No set route</li>
 			</ul>
-		</p>
 
 		<HeaderImg
 			header="Just Show Up"
@@ -60,7 +60,7 @@ import HeaderImg from "../components/HeaderImg.astro";
 		<p class="bodyText">You don't have to sign up.</p>
 		<p class="bodyText">
 			Just show up to Durand Park for NOON on Sunday September 7th ready
-			to ride
+			to ride.
 		</p>
 		<iframe
 			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d998.1980836424308!2d-79.87631785902445!3d43.25016315686084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c9b75e9a28ce3%3A0x30b923337a46f93c!2sDurand%20Park!5e0!3m2!1sen!2sca!4v1715886885647!5m2!1sen!2sca"
@@ -74,12 +74,12 @@ import HeaderImg from "../components/HeaderImg.astro";
 			imgUrl="/images/all-are-welcome.jpg"
 		/>
 		<ol class="bodyText">
-			<li>Put your bike on one side of the park.</li>
-			<li>A paper manifest gets attached to your bike.</li>
-			<li>Line up on the other side of the park.</li>
+			<li>Put your bike on one side of the park</li>
+			<li>A paper manifest gets attached to your bike</li>
+			<li>Line up on the other side of the park</li>
 			<li>
 				When I say go, run to your bike, open the manifest, and ride
-				like hell.
+				like hell
 			</li>
 		</ol>
 		<HeaderImg
@@ -106,28 +106,28 @@ import HeaderImg from "../components/HeaderImg.astro";
 		</div>
 		<ul class="bodyText">
 			<li>
-				The manifest will have list of 4 checkpoints. For example:
+				The manifest will have a list of 4 checkpoints. For example:
 				BANDSHELL
 			</li>
 			<li>Go to that checkpoint location</li>
 			<li>
 				Find the race marker with the code at the checkpoint
-				<img src="/images/test-code.png" />
+				<img src="/images/test-code.png" alt="the marker at a checkpoint. not a real clue"/>
 			</li>
 
 			<li>Write the code in the manifest</li>
-			<li>There will be a puzzle to find where the finish line is</li>
+			<li>There will be a puzzle to find the finish line location</li>
 			<li>
 				There may be some other fuckery in the manifest to keep it
 				interesting
 			</li>
 			<li>
-				First one to arrive at the finish with a <em>completed</em> manifest
-				wins.
+				First rider or team to arrive at the finish line with a <em>completed</em> manifest
+				wins
 			</li>
 			<li>
-				When you get to the finish line, find me and I'll record your
-				rider name, number, and finish time.
+				When you get to the finish line find me and I'll record your
+				rider name, number, and finish time
 			</li>
 			<li>Stick around for spoke cards, t-shirts, and vibes</li>
 		</ul>
@@ -137,7 +137,7 @@ import HeaderImg from "../components/HeaderImg.astro";
 			imgUrl="/images/all-are-welcome.jpg"
 		/>
 		<p class="bodyText">
-			Race bounds are west of Ottawa St, east of Durand St and down The
+			Race bounds are west of Ottawa St, east of Durand St, and down The
 			Mountain.
 		</p>
 		<a href="https://www.google.com/maps/d/u/1/edit?mid=1XVJPi64dVQhSAbHXEsv-MpepZ1wqfi8&amp;usp=sharing" target="_blank">
@@ -149,11 +149,11 @@ import HeaderImg from "../components/HeaderImg.astro";
 			imgUrl="/images/all-are-welcome.jpg"
 		/>
 		<p class="bodyText">
-			Spoke cards for 1st, 2nd, and 3rd place. Dead Fucking Last gets
+			Spoke cards for 1<sup>st</sup>, 2<sup>nd</sup>, and 3<sup>rd</sup> place. Dead Fucking Last gets
 			something special as well.
 		</p>
-		<p class="bodyText">
-			T-shirts and stickers for the raddest riders. In the past, people
+		<p class="bodyText pre-list">
+			T-shirts and stickers for the Raddest Riders. In the past, people
 			have gotten t-shirts for:
 		</p>
 		<ul class="bodyText">
@@ -165,7 +165,7 @@ import HeaderImg from "../components/HeaderImg.astro";
 			<li>Biggest group</li>
 			<li>Sickest handlebars</li>
 			<li>Furthest travelled</li>
-			<li>Best rider/team name</li>
+			<li><a href='/results'>Best rider/team name</a></li>
 			<li>And whatever else I feel like that day</li>
 		</ul>
 		<HeaderImg
@@ -178,14 +178,14 @@ import HeaderImg from "../components/HeaderImg.astro";
 			<li>Have fun</li>
 			<li>
 				Friendly competition only. The prize is a fucking piece of
-				paper, so relax.
+				paper, so relax
 			</li>
 			<li>Ride anything you want</li>
 			<li>
 				No sharing clues/checkpoints. You can ride as a team, but you
-				can't split up. I'll know.
+				can't split up. I'll know
 			</li>
-			<li>Ride safe.</li>
+			<li>Ride safe</li>
 		</ol>
 		<HeaderImg header="FAQ" id="FAQ" imgUrl="/images/all-are-welcome.jpg" />
 		<ul class="faq bodyText">
@@ -357,6 +357,10 @@ import HeaderImg from "../components/HeaderImg.astro";
 		color: var(--background-color);
 		line-height: 1;
 		margin: 0;
+	}
+	p.pre-list ~ ul,p.pre-list{
+		margin-block: 0.5rem;
+
 	}
 	iframe{
 		width: 100%;

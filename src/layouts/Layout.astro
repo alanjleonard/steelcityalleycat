@@ -61,8 +61,10 @@ import PostHog from "../components/posthog.astro";
 <style is:global>
 	@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap");
 	:root {
-		--text: #262222;
-		--background-color: #f9f8f7;
+		/* --text: #262222;
+		--background-color: #f9f8f7; */
+		--text: #f9f8f7;
+		--background-color: #262222;
 		--highlight: #dd6305;
 		--max-width: 120rem;
 		--background-color-2: color-mix(
@@ -77,10 +79,10 @@ import PostHog from "../components/posthog.astro";
 		);
 		font-size: 62.5%;
 		box-sizing: border-box;
-		@media (prefers-color-scheme: dark) {
+		/* @media (prefers-color-scheme: dark) {
 			--text: #f9f8f7;
 			--background-color: #262222;
-		}
+		} */
 	}
 	*,
 	*::before,
