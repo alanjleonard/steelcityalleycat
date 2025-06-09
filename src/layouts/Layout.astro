@@ -136,14 +136,8 @@ import PostHog from "../components/posthog.astro";
 	img {
 		width: 100%;
 	}
-	a {
-		background: var(--text);
-		color: var(--background-color);
-		text-decoration: none;
-	}
-	a:hover {
-		color: var(--text);
-		background: var(--background-color-2);
+	a{
+		color: inherit;
 	}
 	h1,
 	h2,
@@ -170,7 +164,7 @@ import PostHog from "../components/posthog.astro";
 		line-height: 1.5;
 		hyphenate-limit-chars: 7;
 		hyphens: auto;
-		text-align: justify;
+		/* text-align: justify; */
 		text-wrap: pretty;
 	}
 	ul.bodyText,
