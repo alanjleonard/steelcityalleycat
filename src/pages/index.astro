@@ -41,16 +41,14 @@ import HeaderImg from "../components/HeaderImg.astro";
 			STEEL CITY ALLEYCAT.
 		</p>
 
-		<p class="bodyText pre-list">
-			Same as the last race:
-		</p>
-			<ul class="bodyText">
-				<li>Start Line at Durand Park</li>
-				<li>Paper manifest</li>
-				<li>4 new checkpoints</li>
-				<li>Unknown finish line when you start the race</li>
-				<li>No set route</li>
-			</ul>
+		<p class="bodyText pre-list">Same as the last race:</p>
+		<ul class="bodyText">
+			<li>Start Line at Durand Park</li>
+			<li>Paper manifest</li>
+			<li>4 new checkpoints</li>
+			<li>Unknown finish line when you start the race</li>
+			<li>No set route</li>
+		</ul>
 
 		<HeaderImg
 			header="Just Show Up"
@@ -112,7 +110,10 @@ import HeaderImg from "../components/HeaderImg.astro";
 			<li>Go to that checkpoint location</li>
 			<li>
 				Find the race marker with the code at the checkpoint
-				<img src="/images/test-code.png" alt="the marker at a checkpoint. not a real clue"/>
+				<img
+					src="/images/test-code.png"
+					alt="the marker at a checkpoint. not a real clue"
+				/>
 			</li>
 
 			<li>Write the code in the manifest</li>
@@ -122,8 +123,9 @@ import HeaderImg from "../components/HeaderImg.astro";
 				interesting
 			</li>
 			<li>
-				First rider or team to arrive at the finish line with a <em>completed</em> manifest
-				wins
+				First rider or team to arrive at the finish line with a <em
+					>completed</em
+				> manifest wins
 			</li>
 			<li>
 				When you get to the finish line find me and I'll record your
@@ -140,17 +142,23 @@ import HeaderImg from "../components/HeaderImg.astro";
 			Race bounds are west of Ottawa St, east of Durand St, and down The
 			Mountain.
 		</p>
-		<a href="https://www.google.com/maps/d/u/1/edit?mid=1XVJPi64dVQhSAbHXEsv-MpepZ1wqfi8&amp;usp=sharing" target="_blank">
-                <img src="/images/race-bounds.png" alt="a map showing the race bounds">
-              </a>
+		<a
+			href="https://www.google.com/maps/d/u/1/edit?mid=1XVJPi64dVQhSAbHXEsv-MpepZ1wqfi8&usp=sharing"
+			target="_blank"
+		>
+			<img
+				src="/images/race-bounds.png"
+				alt="a map showing the race bounds"
+			/>
+		</a>
 		<HeaderImg
 			header="Prizes"
 			id="Prizes"
 			imgUrl="/images/all-are-welcome.jpg"
 		/>
 		<p class="bodyText">
-			Spoke cards for 1<sup>st</sup>, 2<sup>nd</sup>, and 3<sup>rd</sup> place. Dead Fucking Last gets
-			something special as well.
+			Spoke cards for 1<sup>st</sup>, 2<sup>nd</sup>, and 3<sup>rd</sup> place.
+			Dead Fucking Last gets something special as well.
 		</p>
 		<p class="bodyText pre-list">
 			T-shirts and stickers for the Raddest Riders. In the past, people
@@ -165,7 +173,7 @@ import HeaderImg from "../components/HeaderImg.astro";
 			<li>Biggest group</li>
 			<li>Sickest handlebars</li>
 			<li>Furthest travelled</li>
-			<li><a href='/results'>Best rider/team name</a></li>
+			<li><a href="/results">Best rider/team name</a></li>
 			<li>And whatever else I feel like that day</li>
 		</ul>
 		<HeaderImg
@@ -230,7 +238,9 @@ import HeaderImg from "../components/HeaderImg.astro";
 			</li>
 			<li>
 				<details>
-					<summary>What if I can't find the marker at the checkpoint?</summary>
+					<summary
+						>What if I can't find the marker at the checkpoint?</summary
+					>
 					<p>Look harder.</p>
 					<p>
 						If you think it’s actually missing or covered, DM me on
@@ -287,8 +297,8 @@ import HeaderImg from "../components/HeaderImg.astro";
 			</li>
 		</ul>
 	</section>
+	<SocialLinks />
 </Layout>
-<SocialLinks />
 
 <style>
 	.logo-wrapper {
@@ -358,11 +368,11 @@ import HeaderImg from "../components/HeaderImg.astro";
 		line-height: 1;
 		margin: 0;
 	}
-	p.pre-list ~ ul,p.pre-list{
+	p.pre-list ~ ul,
+	p.pre-list {
 		margin-block: 0.5rem;
-
 	}
-	iframe{
+	iframe {
 		width: 100%;
 		min-height: 40rem;
 	}
