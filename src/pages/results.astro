@@ -17,15 +17,14 @@ import SocialLinks from "../components/SocialLinks.astro";
                 imgUrl="/images/results.jpg"
             />
             <p class="bodyText">
-                Technical issues may have resulted in your finish time not being
-                recorded for the first 3 races. <br /> Finish time is time-of-day.
-                Races start at noon.
+                Send errors or omissions to <a target='_blank' href='https://instagram.com/steelcityalleycat'>@steelcityalleycat</a> or email me at al@steelcityalleycat.com
             </p>
             <ul class='bodyText links'>
                 <li><a href="#SCA1">Steel City Alleycat</a></li>
                 <li><a href="#SCA2">Steel City Alleycat II</a></li>
                 <li><a href="#SCA3">Steel City Alleycat 3</a></li>
                 <li><a href="#SCA4">Steel City Alleycat 4</a></li>
+                <li><a href="#SCA5">Steel City Alleycat 5</a></li>
             </ul>
             <div class="results-wrapper">
                 <div id="table-wrapper"></div>
@@ -50,21 +49,36 @@ import SocialLinks from "../components/SocialLinks.astro";
             title: "Steel City Alleycat",
             date: "September 12, 2021",
             finish: "Bandshell",
+            startTime: "12:00",
+            about: "No rider names for this race",
         },
         2: {
             title: "Steel City Alleycat II",
             date: "May 15, 2022",
             finish: "Gazebo @ Bayfront",
+            startTime: "12:00",
+            about: " Technical issues may have resulted in your finish time not being recorded.",
         },
         3: {
             title: "Steel City Alleycat 3",
             date: "October 16, 2022",
             finish: "Victoria Park",
+            startTime: "12:00",
+            about: " Technical issues may have resulted in your finish time not being recorded.",
         },
         4: {
             title: "Steel City Alleycat 4",
             date: "September 8, 2024",
             finish: "Eastwood Park",
+            startTime: "12:07",
+            about: "Switched from digitial to paper manifest",
+        },
+        5: {
+            title: "Steel City Alleycat 5",
+            date: "September 7, 2025",
+            finish: "Carter Park",
+            startTime: "12:08",
+            about: "Terrible handwriting may have resulted in incorrect names. Send errors or omissions to al",
         },
     };
 
@@ -77,11 +91,11 @@ import SocialLinks from "../components/SocialLinks.astro";
 
             let table = "";
 
-            let race = 4;
+            let race = 5;
             racers.forEach((racer) => {
                 if (race === racer.sca) {
                     --race;
-                    if (race !== 4) {
+                    if (race !== 5) {
                         table += "</table>";
                     }
                     table += `
@@ -91,6 +105,8 @@ import SocialLinks from "../components/SocialLinks.astro";
             <p class='finish-location'>Finish line: ${
                 races[racer.sca].finish
             }</p>
+            <p>Start time: ${races[racer.sca].startTime}</p>
+            <p>${races[racer.sca].about}</p>
           </div>
           <table>
           <tr>

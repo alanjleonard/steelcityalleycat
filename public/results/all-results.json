@@ -1,5 +1,669 @@
 [
   {
+    "sca": 5,
+    "place": 1,
+    "number": 92,
+    "name": "Chad + 1",
+    "time": "12:51:26",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 2,
+    "number": 55,
+    "name": "Hot Dog Hot Dog",
+    "time": "12:52:28",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 3,
+    "number": 39,
+    "name": "Jamie",
+    "time": "12:51:33",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 4,
+    "number": 44,
+    "name": "Ryan",
+    "time": "12:58:57",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 5,
+    "number": 44,
+    "name": "Phil",
+    "time": "12:59:06",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 6,
+    "number": 85,
+    "name": "Ayrton",
+    "time": "12:59:59",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 7,
+    "number": 72,
+    "name": "Didn't make one yet",
+    "time": "13:00:55",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 8,
+    "number": 121,
+    "name": "Ricke",
+    "time": "13:00:59",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 9,
+    "number": 38,
+    "name": "Only Dads",
+    "time": "13:01:04",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 10,
+    "number": 99,
+    "name": "Teddy & Team",
+    "time": "13:06:48",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 11,
+    "number": 49,
+    "name": "That's crokinole, Baby!",
+    "time": "13:06:48",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 12,
+    "number": 22,
+    "name": "Snot Rockets",
+    "time": "13:08:12",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 13,
+    "number": 18,
+    "name": "Team Bad",
+    "time": "13:08:29",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 14,
+    "number": 58,
+    "name": "Ladies who love cats & dogs",
+    "time": "13:08:59",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 15,
+    "number": 86,
+    "name": "",
+    "time": "13:09:33",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 16,
+    "number": 13,
+    "name": "",
+    "time": "13:09:42",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 17,
+    "number": 51,
+    "name": "The Rooiasions",
+    "time": "13:09:48",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 18,
+    "number": 98,
+    "name": "Sam's Cycles",
+    "time": "13:09:52",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 19,
+    "number": 9,
+    "name": "",
+    "time": "13:10:10",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 20,
+    "number": 75,
+    "name": "Just the 2 of us + Arant",
+    "time": "13:10:18",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 21,
+    "number": 11,
+    "name": "None of your business",
+    "time": "13:10:35",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 22,
+    "number": 87,
+    "name": "Single Speed",
+    "time": "13:11:44",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 23,
+    "number": 8,
+    "name": "Pizza oh yes",
+    "time": "13:12:10",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 24,
+    "number": 34,
+    "name": "",
+    "time": "13:12:44",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 25,
+    "number": 79,
+    "name": "",
+    "time": "13:12:53",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 26,
+    "number": 94,
+    "name": "Jay P",
+    "time": "13:13:13",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 27,
+    "number": 35,
+    "name": "Jerry",
+    "time": "13:13:25",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 28,
+    "number": 24,
+    "name": "Jason",
+    "time": "13:13:46",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 29,
+    "number": 56,
+    "name": "Red Lightning",
+    "time": "13:13:54",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 30,
+    "number": 4,
+    "name": "Gabriel needs water",
+    "time": "13:14:30",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 31,
+    "number": 37,
+    "name": "Rub & Rizz",
+    "time": "13:14:55",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 32,
+    "number": 74,
+    "name": "Cornz Mcgee",
+    "time": "13:15:02",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 33,
+    "number": 57,
+    "name": "",
+    "time": "13:15:07",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 34,
+    "number": 19,
+    "name": "",
+    "time": "13:15:13",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 36,
+    "number": 2,
+    "name": "You got served",
+    "time": "13:16:46",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 37,
+    "number": 14,
+    "name": "Rob",
+    "time": "13:17:18",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 38,
+    "number": 28,
+    "name": "Olly Cat",
+    "time": "13:17:58",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 39,
+    "number": 66,
+    "name": "Mathew & Cam",
+    "time": "13:18:07",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 40,
+    "number": 78,
+    "name": "",
+    "time": "13:18:26",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 41,
+    "number": 53,
+    "name": "",
+    "time": "13:18:26",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 42,
+    "number": 46,
+    "name": "Cannon Fodder",
+    "time": "13:18:30",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 43,
+    "number": 65,
+    "name": "Jacob",
+    "time": "13:19:01",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 44,
+    "number": 15,
+    "name": "Vaughn",
+    "time": "13:19:17",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 45,
+    "number": "?",
+    "name": "Matt",
+    "time": "13:19:49",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 46,
+    "number": 96,
+    "name": "",
+    "time": "13:21:05",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 47,
+    "number": 81,
+    "name": "Ant + Nush",
+    "time": "13:21:39",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 48,
+    "number": 5,
+    "name": "",
+    "time": "13:22:01",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 49,
+    "number": 70,
+    "name": "Raf + Pal",
+    "time": "13:22:15",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 50,
+    "number": 45,
+    "name": "Bell's Angels",
+    "time": "13:22:46",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 51,
+    "number": 26,
+    "name": "Found Ali",
+    "time": "13:23:05",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 52,
+    "number": 41,
+    "name": "P & N",
+    "time": "13:23:16",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 53,
+    "number": 84,
+    "name": "Kevin & Tater",
+    "time": "13:23:30",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 54,
+    "number": 66,
+    "name": "Albani",
+    "time": "13:24:20",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 55,
+    "number": 36,
+    "name": "Camillo's Angels",
+    "time": "13:24:34",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 56,
+    "number": 59,
+    "name": "Bandaid Fingers",
+    "time": "13:24:56",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 57,
+    "number": 30,
+    "name": "Richie",
+    "time": "13:25:14",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 58,
+    "number": 77,
+    "name": "M&M's",
+    "time": "13:25:35",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 59,
+    "number": 12,
+    "name": "DD",
+    "time": "13:25:50",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 60,
+    "number": 20,
+    "name": "Zweihand",
+    "time": "13:26:06",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 61,
+    "number": 97,
+    "name": "Raf",
+    "time": "13:26:29",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 62,
+    "number": 69,
+    "name": "Rainbow Bright",
+    "time": "13:26:43",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 63,
+    "number": 23,
+    "name": "James & Arnaud",
+    "time": "13:27:06",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 64,
+    "number": 61,
+    "name": "Fat Bottom Girls",
+    "time": "13:27:31",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 65,
+    "number": 54,
+    "name": "Team Fancy Spaghetti Dinner",
+    "time": "13:29:01",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 66,
+    "number": 96,
+    "name": "Sparkle Motion",
+    "time": "13:29:26",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 67,
+    "number": 42,
+    "name": "Hell Mutt & The Race Caps",
+    "time": "13:30:13",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 68,
+    "number": 73,
+    "name": "Team Maya❣",
+    "time": "13:30:57",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 69,
+    "number": 25,
+    "name": "Stupid Beetle",
+    "time": "13:32:54",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 70,
+    "number": 63,
+    "name": "Sore Buttz",
+    "time": "13:33:45",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 71,
+    "number": 33,
+    "name": "Team C.J.",
+    "time": "13:35:16",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 72,
+    "number": 64,
+    "name": "Can't be rushed",
+    "time": "13:36:16",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 73,
+    "number": 6,
+    "name": "Carter & Renée",
+    "time": "13:36:44",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 74,
+    "number": 95,
+    "name": "Henery + Peter",
+    "time": "13:37:18",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 75,
+    "number": 10,
+    "name": "",
+    "time": "13:38:20",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 76,
+    "number": 43,
+    "name": "",
+    "time": "13:38:22",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 77,
+    "number": 1,
+    "name": "Vape Dog",
+    "time": "13:36:44",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 78,
+    "number": 100,
+    "name": "Wily Wombats",
+    "time": "13:40:32",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 79,
+    "number": 47,
+    "name": "Sam",
+    "time": "13:40:59",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 80,
+    "number": 68,
+    "name": "",
+    "time": "13:47:31",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 81,
+    "number": 7,
+    "name": "The Bike Love",
+    "time": "13:50:32",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 82,
+    "number": 21,
+    "name": "",
+    "time": "13:53:50",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 83,
+    "number": 17,
+    "name": "Shawn",
+    "time": "13:54:10",
+    "complete": "TRUE"
+  },
+  {
+    "sca": 5,
+    "place": 84,
+    "number": 67,
+    "name": "Matt",
+    "time": "13:57:16",
+    "complete": "TRUE"
+  },
+  {
     "sca": 4,
     "place": 0,
     "number": 32,
