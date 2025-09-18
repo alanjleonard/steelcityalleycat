@@ -4,6 +4,7 @@ import HeaderImg from "../components/HeaderImg.astro";
 import SideWordMark from "../components/SideWordMark.astro";
 import Nav from "../components/Nav.astro";
 import SocialLinks from "../components/SocialLinks.astro";
+// import ResultsTable from "../components/ResultsTable.astro";
 ---
 
 <Layout>
@@ -17,9 +18,13 @@ import SocialLinks from "../components/SocialLinks.astro";
                 imgUrl="/images/results.jpg"
             />
             <p class="bodyText">
-                Send errors or omissions to <a target='_blank' href='https://instagram.com/steelcityalleycat'>@steelcityalleycat</a> or email me at al@steelcityalleycat.com
+                Send errors or omissions to me on instagram <a
+                    target="_blank"
+                    href="https://instagram.com/steelcityalleycat"
+                    >@steelcityalleycat</a
+                > or email me at <a href='mailto:al@steelcityalleycat.com'>al@steelcityalleycat.com</a>
             </p>
-            <ul class='bodyText links'>
+            <ul class="bodyText links">
                 <li><a href="#SCA1">Steel City Alleycat</a></li>
                 <li><a href="#SCA2">Steel City Alleycat II</a></li>
                 <li><a href="#SCA3">Steel City Alleycat 3</a></li>
@@ -27,7 +32,9 @@ import SocialLinks from "../components/SocialLinks.astro";
                 <li><a href="#SCA5">Steel City Alleycat 5</a></li>
             </ul>
             <div class="results-wrapper">
-                <div id="table-wrapper"></div>
+                <div id="table-wrapper">
+                    <!-- <ResultsTable /> -->
+                </div>
             </div>
         </section>
     </div>
@@ -78,7 +85,7 @@ import SocialLinks from "../components/SocialLinks.astro";
             date: "September 7, 2025",
             finish: "Carter Park",
             startTime: "12:08",
-            about: "Terrible handwriting may have resulted in incorrect names. Send errors or omissions to al",
+            about: "Terrible handwriting may have resulted in incorrect names. Send errors or omissions to <a target='_blank' href='https://instagram.com/steelcityalleycat'>@steelcityalleycat</a> or email me at <a href='mailto:al@steelcityalleycat.com'>al@steelcityalleycat.com</a>",
         },
     };
 
@@ -101,12 +108,12 @@ import SocialLinks from "../components/SocialLinks.astro";
                     table += `
           <div class='results-header'>
             <h3 id='SCA${racer.sca}'>${races[racer.sca].title}</h3>
-            <p class='date'>${races[racer.sca].date}</p>
-            <p class='finish-location'>Finish line: ${
-                races[racer.sca].finish
-            }</p>
-            <p>Start time: ${races[racer.sca].startTime}</p>
-            <p>${races[racer.sca].about}</p>
+            <div class='row-2'>
+                <p class='date'>${races[racer.sca].date} × Start time: ${races[racer.sca].startTime}</p>
+                <p class='finish-location'>Finish line: ${
+                    races[racer.sca].finish
+                }</p>
+            </div>
           </div>
           <table>
           <tr>
@@ -138,9 +145,8 @@ import SocialLinks from "../components/SocialLinks.astro";
         /* display: flex; */
         flex-wrap: wrap;
         justify-content: space-between;
-        align-items: center;
     }
-    ul.links a{
+    ul.links a {
         /* color: blue; */
         text-transform: uppercase;
         font-family: "blackout_midnight";
@@ -163,6 +169,9 @@ import SocialLinks from "../components/SocialLinks.astro";
         border-bottom: solid 1px var(--text);
         background: var(--background-color);
     }
+    .results-header p {
+        margin: 0;
+    }
     .results-header h3 {
         font-size: 2.5rem;
         text-transform: uppercase;
@@ -171,11 +180,20 @@ import SocialLinks from "../components/SocialLinks.astro";
         line-height: 1.2;
         white-space: nowrap;
     }
+    .row-2 {
+        display: flex;
+    }
+    @media screen and (max-width: 600px) {
+        .row-2 {
+            flex-direction: column;
+        }
+    }
+
     .results-header .date {
         margin: 0;
     }
     .results-header .finish-location {
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
         margin: 0;
     }
     table {
@@ -194,13 +212,13 @@ import SocialLinks from "../components/SocialLinks.astro";
         padding: 0.5rem;
         vertical-align: top;
     }
-    th:nth-child(1) ,
+    th:nth-child(1),
     td:nth-child(1) {
         text-align: right;
         white-space: nowrap;
         font-weight: 700;
     }
-    th:nth-child(2) span ,
+    th:nth-child(2) span,
     td:nth-child(2) span {
         float: right;
         display: inline-block;
@@ -209,14 +227,14 @@ import SocialLinks from "../components/SocialLinks.astro";
         font-weight: 700;
         color: #fff8;
     }
-    th:nth-child(3) ,
+    th:nth-child(3),
     td:nth-child(3) {
         text-align: right;
     }
     td.time {
         font-family: monospace;
     }
-    th.tod{
+    th.tod {
         white-space: nowrap;
     }
 </style>

@@ -1,0 +1,120 @@
+---
+import results from "../assets/results/all-results.json";
+---
+
+<table>
+	<thead>
+		<tr>
+			{Object.keys(results[0]).map((key) => <th>{key}</th>)}
+		</tr>
+	</thead>
+	<tbody>
+		{
+			results.map((row) => (
+				<tr>
+					{Object.values(row).map((val) => (
+						<td>{val}</td>
+					))}
+				</tr>
+			))
+		}
+	</tbody>
+</table>
+<style></style>
+<script>
+	function getOrdinalSuffix(place) {
+		//it's got to be a number
+		if (place === 0) {
+			return "-";
+		}
+		if (place % 10 === 1 && place % 100 !== 11) return place + "st";
+		if (place % 10 === 2 && place % 100 !== 12) return place + "nd";
+		if (place % 10 === 3 && place % 100 !== 13) return place + "rd";
+		return place + "th";
+	}
+	const races = {
+		1: {
+			title: "Steel City Alleycat",
+			date: "September 12, 2021",
+			finish: "Bandshell",
+			startTime: "12:00",
+			about: "No rider names for this race",
+		},
+		2: {
+			title: "Steel City Alleycat II",
+			date: "May 15, 2022",
+			finish: "Gazebo @ Bayfront",
+			startTime: "12:00",
+			about: " Technical issues may have resulted in your finish time not being recorded.",
+		},
+		3: {
+			title: "Steel City Alleycat 3",
+			date: "October 16, 2022",
+			finish: "Victoria Park",
+			startTime: "12:00",
+			about: " Technical issues may have resulted in your finish time not being recorded.",
+		},
+		4: {
+			title: "Steel City Alleycat 4",
+			date: "September 8, 2024",
+			finish: "Eastwood Park",
+			startTime: "12:07",
+			about: "Switched from digitial to paper manifest",
+		},
+		5: {
+			title: "Steel City Alleycat 5",
+			date: "September 7, 2025",
+			finish: "Carter Park",
+			startTime: "12:08",
+			about: "Terrible handwriting may have resulted in incorrect names. Send errors or omissions to al",
+		},
+	};
+
+	fetch("/results/all-results.json")
+		.then((response) => response.json())
+		.then((data) => {
+			const racers = Object.values(data);
+
+			// Create the table and header row
+
+			let table = "";
+
+			let race = 5;
+			racers.forEach((racer) => {
+				if (race === racer.sca) {
+					--race;
+					if (race !== 5) {
+						table += "</table>";
+					}
+					table += `
+          <div class='results-header'>
+            <h3 id='SCA${racer.sca}'>${races[racer.sca].title}</h3>
+            <p class='date'>${races[racer.sca].date}</p>
+            <p class='finish-location'>Finish line: ${
+				races[racer.sca].finish
+			}</p>
+            <p>Start time: ${races[racer.sca].startTime}</p>
+            <p>${races[racer.sca].about}</p>
+          </div>
+          <table>
+          <tr>
+            <th>Place</th>
+            <th>Racer Name <span>#</span> </th>
+            <th class='tod'>Time of day</th>
+          </tr>`;
+				}
+				table += `
+                    <tr>
+                        <td>${getOrdinalSuffix(racer.place++)}</td>
+                        <td><span>${racer.number}</span> ${racer.name}</td>
+                        <td class='time'>${racer.time === 0 ? "DNF" : racer.time}</td>
+                    </tr>`;
+			});
+
+			// Close the table tag
+			table += "</table>";
+
+			// Return the generated HTML table
+			// document.getElementById(`table-wrapper`).innerHTML = table;
+		});
+</script>
